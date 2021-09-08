@@ -9,24 +9,28 @@ header{
     justify-content:space-around;
 }
 header #logo{
-    width:15vw;
+    width:20vw;
+    height: 18vw;
 }
 header #logo img{
     width:100%;
+    height: 100%;
 }
 header #ident{
     padding-top: 4vw;
     width:50vw;
 }
 header #ident h1{
-    font-size: 4vw;
+    font-size: 5vw;
     text-align:center;
+    padding-top: 3vw;
+    padding-right: 10vw;
 }
 nav{
 	position: absolute;
 	margin-top: 8vh;
 	text-align: center;
-	background-color: #999;
+	background-color: #4B6088;
 	width: 100vw;
 }
 nav ul li{
@@ -36,72 +40,149 @@ nav ul li{
 	padding-top: 4vh;
 	padding-bottom: 2vw;	
 }
-nav ul li a{
-	color: black;
-	text-decoration: none;
-	font-size: 20px;
-	margin-left: 2vw;
+header{
+    background-color: #4B6088
 }
 header #icon-menu{
     width:10vw;
+    padding-left: 0.1vw;
 }
 header #icon-menu img{
     width:100%;
 }
-main{
-    background-color:;
+body{
+    background-color: black;
 }
-#img-fundo{
-	position: absolute;
-	z-index: -1vw;
-	opacity: 0.5;
-	width: 100vw;
-    border-bottom: black 1px solid;
-}
-main div h1{
-    font-size: 6vw;
-    text-align: center;
-    padding-bottom: 2vw;
-    color: rgb(11, 11, 165);
-}
-main #textos{	
-    height: 90vw;
-}
-main div h2{
-    color: rgb(92, 177, 177);
-    font-size: 5.77vw;
-    text-align: justify;
-    padding-left: 3vw;
-    padding-right: 3vw;
-}
-main div img{
+main img{
+    width: 50vw;
+    height: 60vw;
     float: left;
-    height: 30vw;
-    width: 30vw;
-    padding-left: 4vw;
+    padding: 1vw;
+    border-radius: 8vw;
+    border-top: 5vw;
+    padding-bottom: 4vw;
+}
+main #titulo{
+    font-size: 4vw;
+    text-align: center;
+    color: white;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 }
 footer{
-    background-color: rgb(156, 156, 156);
-    height: 10vw;
-    bottom: 0;
-    width: 100vw;
-    position: fixed;
-}
-footer h3{
-    color: black;
-    text-align: center;
-    font-style: none;
-}
-@media only screen and (min-device-width: 300px){
-	footer{
+    background-color: #676564;
     height: 5vw;
     bottom: 0;
     width: 100vw;
     position: fixed;
 }
+footer p{
+    color: black;
+    text-align: center;
+    font-style: none;
+}
+@media only screen and (min-device-width: 500px){
+    main img{
+        width: 33vw;
+        height: 50vw;
+        float: left;
+        padding: 1vw;
+        border-radius: 8vw;
+        border-top: 5vw;
+        padding-bottom: 4vw;
+    }
+    footer{
+        height: 3vw;
+    }
 }
 @media only screen and (min-device-width: 600px){
-	footer h3{
-		font-size: 4vw;	
-	}
+    header{
+        height: 12vw;
+    }
+    header #icon-menu{
+        width:7vw;
+    }
+    header #icon-menu img{
+        width:100%;
+    }
+    header #logo{
+        width: 20vw;
+        height: 12vw;
+    }
+    header #ident h1{
+        font-size: 4vw;
+        text-align:center;
+        padding-top: 1vw;
+        padding-right: 12vw;
+    }   
+@media only screen and (min-device-width: 750px){
+    header{
+        height: 8vw;
+    }
+    header #icon-menu{
+        width:5vw;
+    }
+    header #icon-menu img{
+        width:100%;
+    }
+    header #logo{
+        width: 15vw;
+        height: 8vw;
+    }
+    header #ident h1{
+        font-size: 3vw;
+        text-align:center;
+        padding-top: 0.1vw;
+        padding-right: 10vw;
+    }   
+    main #titulo{
+        font-size: 2vw;
+    }
+    main img{
+        width: 25vw;
+        height: 50vw;
+        float: left;
+        padding: 1vw;
+        border-radius: 8vw;
+        border-top: 5vw;
+        padding-bottom: 4vw;
+    }
+    footer{
+        height: 2vw;
+    }
+}
+@media only screen and (min-device-width: 1000px){
+    main img{
+        width: 25vw;
+        height: 40vw;
+        float: left;
+        padding: 1vw;
+        border-radius: 8vw;
+        border-top: 5vw;
+        padding-bottom: 4vw;
+    }
+    footer{
+        height: 1.4vw;
+    }
+}
+@media only screen and (min-device-width: 1350px){
+    header #icon-menu{
+        width:4vw;
+    }
+    header #icon-menu img{
+        width:100%;
+    }
+    main img{
+        width: 20vw;
+        height: 40vw;
+    }
+}
+@media only screen and (min-device-width: 1650px){
+    main img{
+        width: 19.5vw;
+        height: 30vw;
+    }
+    footer{
+        height: 1vw;
+    }
 }
